@@ -9,7 +9,7 @@ import {
 } from '../rx-collection';
 
 export interface KeyFunctionMap {
-    [key: string]: Function;
+    [key: string]: undefined | Function; // allow for defining optional orm methods
 }
 export interface NumberFunctionMap {
     [key: number]: Function;
